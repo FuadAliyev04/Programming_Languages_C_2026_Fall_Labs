@@ -39,7 +39,13 @@ int main(void) {
         scanf("%d", &n);
     }
 
-    is_prime(n);
+    printf("Primes up to %d: ", n);
+    for (int i = 2; i <= n; i++) {
+        if (is_prime(i)) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
 
    
     // printf("Primes up to %d: ", n);
